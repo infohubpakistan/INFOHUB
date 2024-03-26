@@ -13,15 +13,13 @@
     <!-- Navbar -->
     <nav class="bg-gray-800 text-white p-4 flex justify-between items-center" style="height: 65px;">
         <div>
-            <img src="Black & White Stamp (1).png" height="124px" alt="Logo" >
+            <img src="Black & White Stamp (1).png" height="124px" alt="Logo">
         </div>
 
         <style>
-
-nav img {
-    height: 124px;
-}
-
+            nav img {
+                height: 124px;
+            }
         </style>
         <div>
             <a href="#" class="mx-2">Home</a>
@@ -35,30 +33,31 @@ nav img {
         <form action="https://api.web3forms.com/submit" method="POSt" id="contactForm" class="max-w-md mx-auto">
 
             <div class="mb-4">
-                <input type="text" id="name" name="name" placeholder="Name" required
-                    class="border border-gray-300 rounded-md p-2 w-full">
-                    <input type="hidden" name="access_key" value="db06d7a4-1f5b-4685-be45-298214ba3833">
+                <input type="text" id="name" name="name" placeholder="Name" required class="border border-gray-300 rounded-md p-2 w-full">
+                <input type="hidden" name="access_key" value="db06d7a4-1f5b-4685-be45-298214ba3833">
 
             </div>
             <div class="mb-4">
-                <input type="text" id="country" name="country" placeholder="Country" required
-                    class="border border-gray-300 rounded-md p-2 w-full">
+                <select id="country" name="country" required class="border border-gray-300 rounded-md p-2 w-full">
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="USA">USA</option>
+                    <option value="India">India</option>
+                    <option value="Canada">Canada</option>
+                    <option value="England">England</option>
+                </select>
             </div>
             <div class="mb-4">
-                <input type="text" id="city" name="city" placeholder="City" required
-                    class="border border-gray-300 rounded-md p-2 w-full">
+                <input type="text" id="city" name="city" placeholder="City" required class="border border-gray-300 rounded-md p-2 w-full">
             </div>
             <div class="mb-4">
-                <input type="email" id="email" name="email" placeholder="Email" required
-                    class="border border-gray-300 rounded-md p-2 w-full">
+                <input type="email" id="email" name="email" placeholder="Email" required class="border border-gray-300 rounded-md p-2 w-full">
             </div>
             <div class="mb-4">
-                <textarea id="message" name="message" placeholder="Message/Your suggestions" required
-                    class="border border-gray-300 rounded-md p-2 w-full"></textarea>
+                <textarea id="message" name="message" placeholder="Message/Your suggestions" required class="border border-gray-300 rounded-md p-2 w-full"></textarea>
             </div>
             <div class="mb-4">
-                <button type="submit"
-                    class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
                     Submit
                 </button>
             </div>
