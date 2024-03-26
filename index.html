@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFO HUB PAKISTAN</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white p-4 flex justify-between items-center" style="height: 65px;">
+        <div>
+            <img src="Black & White Stamp (1).png" height="124px" alt="Logo" >
+        </div>
+
+        <style>
+
+nav img {
+    height: 124px;
+}
+
+        </style>
+        <div>
+            <a href="#" class="mx-2">Home</a>
+            <a href="#" class="mx-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Form -->
+    <div class="container mx-auto mt-8">
+        <h1 class="text-3xl font-bold mb-4 text-center">Contact Us</h1>
+        <form id="contactForm" class="max-w-md mx-auto" onsubmit="submitForm(event)">
+            <div class="mb-4">
+                <input type="text" id="name" name="name" placeholder="Name" required
+                    class="border border-gray-300 rounded-md p-2 w-full">
+            </div>
+            <div class="mb-4">
+                <input type="text" id="country" name="country" placeholder="Country" required
+                    class="border border-gray-300 rounded-md p-2 w-full">
+            </div>
+            <div class="mb-4">
+                <input type="text" id="city" name="city" placeholder="City" required
+                    class="border border-gray-300 rounded-md p-2 w-full">
+            </div>
+            <div class="mb-4">
+                <input type="email" id="email" name="email" placeholder="Email" required
+                    class="border border-gray-300 rounded-md p-2 w-full">
+            </div>
+            <div class="mb-4">
+                <textarea id="message" name="message" placeholder="Message/Your suggestions" required
+                    class="border border-gray-300 rounded-md p-2 w-full"></textarea>
+            </div>
+            <div class="mb-4">
+                <button type="submit"
+                    class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Inline JavaScript -->
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent form submission
+            // Fetch form values
+            const name = document.getElementById('name').value;
+            const country = document.getElementById('country').value;
+            const city = document.getElementById('city').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            // Example: Log form data
+            console.log("Name:", name);
+            console.log("Country:", country);
+            console.log("City:", city);
+            console.log("Email:", email);
+            console.log("Message:", message);
+            // You can add further processing like sending data to a server here
+        }
+    </script>
+</body>
+
+</html>
