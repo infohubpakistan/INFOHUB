@@ -22,7 +22,7 @@
             }
         </style>
         <div>
-            <a href="#" class="mx-2">Home</a>
+            <a href="#" class="mx-2" onclick="showErrorMessage()">Home</a>
             <a href="#" class="mx-2">Contact</a>
         </div>
     </nav>
@@ -87,21 +87,8 @@
 
     <!-- Inline JavaScript -->
     <script>
-        function submitForm(event) {
-            event.preventDefault(); // Prevent form submission
-            // Fetch form values
-            const name = document.getElementById('name').value;
-            const country = document.getElementById('country').value;
-            const city = document.getElementById('city').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            // Example: Log form data
-            console.log("Name:", name);
-            console.log("Country:", country);
-            console.log("City:", city);
-            console.log("Email:", email);
-            console.log("Message:", message);
-            // You can add further processing like sending data to a server here
+        function showErrorMessage() {
+            alert("This is not working on your device.");
         }
     </script>
 </body>
